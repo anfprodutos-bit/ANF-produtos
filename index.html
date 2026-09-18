@@ -277,6 +277,31 @@
   .feature h3{font-size:17px; margin-bottom:8px;}
   .feature p{font-size:13.5px;}
 
+  .affiliate-section{padding-top:8px;}
+  .affiliate-grid{
+    display:grid; grid-template-columns:repeat(3, minmax(0,1fr));
+    gap:18px; margin-top:22px;
+  }
+  .affiliate-card{
+    background:linear-gradient(180deg, var(--panel), var(--panel-2));
+    border:1px solid var(--line); border-radius:var(--radius); overflow:hidden;
+  }
+  .affiliate-visual{
+    height:180px; display:flex; align-items:center; justify-content:center;
+    background:linear-gradient(135deg, rgba(13,123,255,0.18), rgba(255,255,255,0.02));
+    border-bottom:1px solid var(--line); font-size:3rem;
+  }
+  .affiliate-body{padding:18px 18px 20px; display:flex; flex-direction:column; gap:10px;}
+  .affiliate-body h3{font-size:20px;}
+  .affiliate-body p{font-size:13px;}
+  .affiliate-meta{display:flex; align-items:center; justify-content:space-between; gap:10px; margin-top:6px;}
+  .affiliate-price{font-family:'Rajdhani',sans-serif; font-size:22px; color:var(--ink); font-weight:700;}
+  .affiliate-link{
+    display:inline-flex; align-items:center; justify-content:center; width:100%;
+    background:var(--blue); color:#04070f; border-radius:var(--radius-pill); text-decoration:none;
+    font-weight:700; font-size:13.5px; padding:11px 14px;
+  }
+
   /* whatsapp cta band */
   .wa-band{
     background:linear-gradient(120deg, var(--panel-2), var(--panel));
@@ -514,6 +539,50 @@
         </div>
       </div>
       <div class="grid" id="grid-produtos"></div>
+    </section>
+
+    <section class="affiliate-section" aria-label="Produtos afiliados">
+      <div class="section-head">
+        <div>
+          <h2>Produtos indicados</h2>
+          <p>Selecionamos itens úteis para complementar sua compra com ofertas do Mercado Livre.</p>
+        </div>
+      </div>
+      <div class="affiliate-grid">
+        <article class="affiliate-card">
+          <div class="affiliate-visual">🎧</div>
+          <div class="affiliate-body">
+            <h3>Fones Bluetooth</h3>
+            <p>Som com boa qualidade e conforto para uso diário.</p>
+            <div class="affiliate-meta">
+              <span class="affiliate-price">A partir de R$ 79</span>
+            </div>
+            <a class="affiliate-link" href="https://meli.la/22ex2vg" target="_blank" rel="sponsored noopener">Ver produto</a>
+          </div>
+        </article>
+        <article class="affiliate-card">
+          <div class="affiliate-visual">⌚</div>
+          <div class="affiliate-body">
+            <h3>Smartwatch</h3>
+            <p>Relógio inteligente com monitoramento e praticidade.</p>
+            <div class="affiliate-meta">
+              <span class="affiliate-price">A partir de R$ 129</span>
+            </div>
+            <a class="affiliate-link" href="https://meli.la/22ex2vg" target="_blank" rel="sponsored noopener">Ver produto</a>
+          </div>
+        </article>
+        <article class="affiliate-card">
+          <div class="affiliate-visual">🔋</div>
+          <div class="affiliate-body">
+            <h3>Carregador Turbo</h3>
+            <p>Mais praticidade para recarregar seu celular rápido.</p>
+            <div class="affiliate-meta">
+              <span class="affiliate-price">A partir de R$ 59</span>
+            </div>
+            <a class="affiliate-link" href="https://meli.la/22ex2vg" target="_blank" rel="sponsored noopener">Ver produto</a>
+          </div>
+        </article>
+      </div>
     </section>
 
     <section>
